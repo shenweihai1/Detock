@@ -311,3 +311,18 @@ Experiment data and code to generate the figures in the paper can be found in ht
 ## Acknowledgements
 
 This work is supported by the National Science Foundation under grant IIS-1910613
+
+# Deployment
+```
+sudo apt install cmake build-essential pkg-config
+
+cd ~
+git clone https://github.com/shenweihai1/Detock.git
+cd Detock
+
+mkdir build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=release
+make -j$(nproc)
+
+```
